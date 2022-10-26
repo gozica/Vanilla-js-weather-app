@@ -46,7 +46,9 @@ function searchCity(response) {
   h1.innerHTML = response.data.name;
 
   let temperatureElement = document.querySelector("#temperature");
+  let windElement = document.querySelector("#wind");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
 let form = document.querySelector("#search-city");
