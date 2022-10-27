@@ -78,6 +78,16 @@ p2 {
 
 }
 
+.windDescription {
+  font-size: 20px;
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.cloudyDescription {
+  font-size: 20px;
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
 
 .temperature {
   font-size: 70px;
@@ -89,6 +99,8 @@ p2 {
   position: relative;
   top: -20px;
 }
+
+
 
 
 .topnav a {
