@@ -49,6 +49,7 @@ let cityElement = document.querySelector("#city");
 let descriptionElement = document.querySelector("#description");
   let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
+  let lightElement = document.querySelector("#light");
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
@@ -56,10 +57,12 @@ let descriptionElement = document.querySelector("#description");
   windElement.innerHTML = Math.round(response.data.wind.speed);
   iconElement.setAttribute(
     "src",
-    "http://openweathermap.org/img/wn/10d@2x.png"
+    'http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png'
   );
 
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  lightElement.innerHTML = response.data.sys.sunrise;
 
 }
 
