@@ -38,30 +38,14 @@ h2 {
 h3 {
     text-align: center;
     font-family: 'Nanum Gothic Coding', monospace;
-    position: relative;
-    right: -20px;
-    bottom: -95px;
     border-radius: 10px;
     background-color:whitesmoke;
-    max-width: 300px;
+    max-width: 700px;
     opacity: 0.7;
 
 }
 
-h4 {
-  text-align: center;
-    font-family: 'Nanum Gothic Coding', monospace;
-    padding: 40px 0px;
-    position: relative;
-    top: -65px;
-    right: -90px;
-    margin: auto;
-    border-radius: 10px;
-    background-color:whitesmoke;
-    max-width: 300px;
-    opacity: 0.7;
 
-}
 
 h5 {
   font-family: 'Nanum Gothic Coding', monospace;

@@ -50,8 +50,7 @@ let cityElement = document.querySelector("#city");
 let descriptionElement = document.querySelector("#description");
   let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
-  let lightElement = document.querySelector("#light");
-  let nightElement = document.querySelector("#night");
+ 
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
@@ -63,9 +62,6 @@ let descriptionElement = document.querySelector("#description");
  );
 
   iconElement.setAttribute("alt", response.data.weather[0].description);
-
-  lightElement.innerHTML = response.data.sys.sunrise;
-  nightElement.innerHTML = response.data.sys.sunset;
 
 
   
