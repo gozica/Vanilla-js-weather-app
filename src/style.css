@@ -13,6 +13,7 @@ body {
   background-size: contain, contain;
 }
 
+
 .weather {
    border: 4px hidden #FFA248;
   padding: 25px;
@@ -45,6 +46,29 @@ h3 {
 
 }
 
+.spooky {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Nanum Gothic Coding', monospace;
+  
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+.weather-forcast-temp-max {
+  font-size: 13px;
+}
+
+.weather-forcast-temp-min {
+  font-size: 13px;
+  opacity: 0.5;
+}
+
 
 
 h5 {
@@ -53,6 +77,7 @@ h5 {
 
 p {
   font-family: 'Nanum Gothic Coding', monospace;
+ 
 }
 
 p2 {
