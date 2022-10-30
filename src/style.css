@@ -56,16 +56,18 @@ h3 {
 
 .weather-forecast {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   font-family: 'Nanum Gothic Coding', monospace;
 }
 .weather-forcast-temp-max {
   font-size: 13px;
+  text-align: center;
 }
 
 .weather-forcast-temp-min {
   font-size: 13px;
+  text-align: center;
   opacity: 0.5;
 }
 
