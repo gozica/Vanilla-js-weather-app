@@ -10,7 +10,8 @@
 body {
   background-image: url("../witch.jpg"), url(../black.jpg);
   background-repeat: no-repeat, repeat;
-  background-size: contain, contain;
+  background-size: 900px 650px, contain;
+  background-position: center;
 }
 
 
@@ -18,7 +19,7 @@ body {
    border: 4px hidden #FFA248;
   padding: 25px;
   background-position: right;
-  max-width: fit-content;
+   max-width: fit-content;
   margin: 0 auto;
 }
 
