@@ -28,21 +28,21 @@ let month = months[now.getMonth()];
 h2.innerHTML = `${day}, ${month} ${date}, ${hours}:${minutes}, ${year}`;
 
 function displayForecast() {
+  let forcast = response.data.daily;
 let forecastElement = document.querySelector("#forecast");
 
 let forecastHTML = `<div class="row">`;
-let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
-days.forEach(function(day) {
+forecast.forEach(function(forecastDay) {
 forecastHTML = forecastHTML +
   `
   <div class="col-2">
-    <div class="weather-forecast-date">${day}</div>
-    <img src="http://openweathermap.org/img/wn/50d@2x.png" 
+    <div class="weather-forecast-date">${forecastDay.dt}</div>
+    <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" 
     alt="" 
     width="50" />
     <div class="weather-forecast-temp">
-      <span class="weather-forcast-temp-max"> 49° </span>
-      <span class="weather-forcast-temp-min"> 25° </span>
+      <span class="weather-forcast-temp-max"> ${forecastDay.temp.max}° </span>
+      <span class="weather-forcast-temp-min"> ${forecastDay.temp.min}° </span>
     </div>
   </div>
 `;
@@ -68,6 +68,15 @@ function convertToCelsius(event) {
   temperatureElement.innerHTML = 11;
 }
 
+function getForecast(coordinates) {
+console.log(coordinates);
+
+let apiKey = "e049244c47b06da6db12af4f0ec42242";
+let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?
+lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+axios.get(apiUrl).then(displayForecast);
+}
+
 
 function searchCity(response) {
   let h1 = document.querySelector("h1");
@@ -78,10 +87,7 @@ let descriptionElement = document.querySelector("#description");
   let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
 
-  displayForecast();
 
-  
- 
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
@@ -94,8 +100,8 @@ let descriptionElement = document.querySelector("#description");
 
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
+getForecast(response.data.coord);
 
-  
 }
 
 let form = document.querySelector("#search-city");
