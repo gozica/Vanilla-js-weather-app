@@ -127,28 +127,26 @@ getForecast(response.data.coord);
 }
 
 let form = document.querySelector("#search-city");
-form.addEventListener("submit", handleCity);
-function handleCity(e) {
+form.addEventListener("submit", handleSubmit);
+
+function handleSubmit(e) {
   e.preventDefault();
-  let apiKey = "e049244c47b06da6db12af4f0ec42242";
   let city = document.querySelector("#scare-input").value;
+  handleCity(city);
+}
+
+function handleCity(city) {
+  let apiKey = "e049244c47b06da6db12af4f0ec42242";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(searchCity);
 }
 
-// function convertToFahrenheit(event) {
-//   event.preventDefault();
-//   let temperatureElement = document.querySelector("#temperature");
-//   temperatureElement.innerHTML = 52;
-// }
+handleCity("Sleepy Hollow");
+
+
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
-function convertToCelsuis(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 11;
-}
 
 let celsuisLink = document.querySelector("#celsius-link");
 celsuisLink.addEventListener("click", convertToCelsuis);
