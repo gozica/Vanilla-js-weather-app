@@ -1,14 +1,15 @@
 
 body {
-  background-image: url("../witch.jpg"), url(../black.jpg);
-  background-repeat: no-repeat, repeat;
-  background-size: 900px 650px, contain;
-  background-position: center;
+  background-image: url("../pumpkin.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left bottom;
+  background-size: 550px 550px;
 }
 
 
 .weather {
-   border: 4px hidden #FFA248;
+   border: 4px hidden #E18243;
   padding: 25px;
   background-position: right;
    max-width: fit-content;
@@ -16,7 +17,7 @@ body {
 }
 
 h1 {
-    color:#FFA248 ;
+    color:#E18243 ;
    font-family: 'Nanum Gothic Coding', monospace;
    
 }
@@ -29,7 +30,7 @@ h1 {
 
 
 .tue {
-  color:#FFA248;
+  color:#E18243;
   font-size: 20px;
   font-weight: bold;
 }
@@ -81,13 +82,17 @@ h5 {
 
 p {
   font-family: 'Nanum Gothic Coding', monospace;
+  font-size: 13px;
+  color: black;
+  opacity: 0.5;
+  
  
 }
 
 p2 {
     font-size: 40px;
    font-family: 'Nanum Gothic Coding', monospace;
-    color: #FFA248;
+    color: #E18243;
 
 }
 
