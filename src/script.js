@@ -1,5 +1,6 @@
 let now = new Date();
-let h2 = document.querySelector("h2");
+ let tueElement = document.querySelector("#tue");
+ let tue = tueElement.innerHTML;
 let date = now.getDate();
 let hours = now.getHours();
 let minutes = now.getMinutes();
@@ -25,7 +26,7 @@ let months = [
 
 let month = months[now.getMonth()];
 
-h2.innerHTML = `${day}, ${month} ${date}, ${hours}:${minutes}, ${year}`;
+tueElement.innerHTML = `${day}, ${month} ${date}, ${hours}:${minutes}, ${year}`;
 
 function formatDay(timestamp) {
 let date = new Date(timestamp * 1000);

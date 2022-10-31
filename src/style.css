@@ -28,11 +28,13 @@ h1 {
 }
 
 
-h2 {
-    color: #FFA248;
-    font-family: 'Nanum Gothic Coding', monospace;
-  
+.tue {
+  color:#FFA248;
+  font-size: 20px;
+  font-weight: bold;
 }
+
+
 
 
 
