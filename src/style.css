@@ -1,12 +1,4 @@
 
-
-
-
-
-
-
-
-
 body {
   background-image: url("../witch.jpg"), url(../black.jpg);
   background-repeat: no-repeat, repeat;
@@ -28,6 +20,13 @@ h1 {
    font-family: 'Nanum Gothic Coding', monospace;
    
 }
+
+#city {
+  font-size: 50px;
+  font-family: 'Nanum Gothic Coding', monospace;
+
+}
+
 
 h2 {
     color: #FFA248;
@@ -145,73 +144,7 @@ p2 {
  
 }
 
-.sun {
-    text-align: center;
-    font-size: 50px;
-    color: gray
-}
 
-.cloud {
-  text-align: center;
-    font-size: 50px;
-    color: gray;
-}
-
-.bolt {
-   text-align: center;
-    font-size: 50px;
-    color: gray
-}
-
-.rainy {
-   text-align: center;
-    font-size: 50px;
-    color: gray;
-}
-
-.title {
-text-align: center;
-
-}
-
-.text {
-  text-align: center;
-}
-
-.rain {
-    color: grey;
-    font-size: 40px;
-}
-
-.up {
-  color: #FFA248;
-  font-size: 30px;
-}
-
-.down {
-
-color:grey;
-font-size: 30px;
-}
-.mon {
-  opacity: 0.7;
-}
-
-.tue {
-  opacity: 0.7;
-}
-
-.wed {
-  opacity: 0.7;
-}
-
-.thu {
-  opacity: 0.7;
-}
-
-.fri {
-  opacity: 0.7;
-}
 
 
 
